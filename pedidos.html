@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BM Shop - Gestão de pedidos unificada para seu estabelecimento">
+    <title>BM Shop - Pedidos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="orders-styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top bg-white navbar-light py-1">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="logo.png" alt="BM Shop Logo" width="120" height="40">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#servicos">
+                                <span>Serviços</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="entrega.html">
+                                <span>Entrega</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pagamento.html">
+                                <span>Pagamento</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="pedidos.html">
+                                <span>Pedidos</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#ofertas">
+                                <span>Ofertas</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="produtos-precos.html">
+                                <span>Produtos e preços</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="orders-hero">
+            <div class="container">
+                <div class="row align-items-center min-vh-100">
+                    <div class="col-lg-6">
+                        <div class="orders-hero-content">
+                            <h1 class="display-3 fw-bold mb-4">
+                                Gestão de pedidos unificada
+                            </h1>
+                            <p class="lead mb-4">
+                                Os pedidos são sincronizados em tempo real com um processo claro, evitando pedidos perdidos ou incorretos.
+                            </p>
+                            <div class="orders-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Aceitação automática</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-bell"></i>
+                                    <span>Notificações em tempo real</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-print"></i>
+                                    <span>Impressão integrada</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="orders-image">
+                            <img src="orders-illustration.svg" alt="Gestão de Pedidos BM Shop" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="orders-benefits">
+            <div class="container">
+                <h2 class="text-center mb-5">Por que escolher a BM Shop para gerenciar pedidos?</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3>Aceitar pedidos automaticamente</h3>
+                            <p>Os pedidos são aceitos e categorizados automaticamente, sem necessidade de ação manual.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                            <h3>Lembretes em tempo real</h3>
+                            <p>Alertas de voz, janelas pop-up e vibrações ajudam a evitar pedidos perdidos durante horários de pico.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-print"></i>
+                            </div>
+                            <h3>Impressão integrada de recibos</h3>
+                            <p>Imprima automaticamente recibos, recibos de cozinha e recibos de entrega, reduzindo operações manuais.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h3>Visualização de dados</h3>
+                            <p>Veja o volume de pedidos, eficiência de atendimento e muito mais por dia/período/estabelecimento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="orders-process">
+            <div class="container">
+                <h2 class="text-center mb-5">Como funciona um pedido?</h2>
+                <div class="process-timeline">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Pedido recebido</h3>
+                            <p>Quando um cliente faz um pedido, ele é aceito automaticamente com um alerta de voz</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Impressão automática</h3>
+                            <p>A impressora de recibos imprime automaticamente o recibo do pedido, sem necessidade de operação manual</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Notificação ao entregador</h3>
+                            <p>Uma notificação automática é enviada ao entregador (tanto para entrega da plataforma como para entrega da loja)</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Acompanhamento em tempo real</h3>
+                            <p>O status do pedido é compartilhado com o cliente em tempo real</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>Entrega e sincronização</h3>
+                            <p>O pedido é entregue com sucesso e os dados são sincronizados com o sistema do estabelecimento</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="orders-cta">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="mb-4">Aceite pedidos facilmente, a qualquer hora e em qualquer lugar</h2>
+                        <p class="lead mb-5">
+                            Não importa se você está no estabelecimento ou não, a plataforma sincroniza seu telefone, tablet e computador, 
+                            para que você nunca perca um pedido e seu negócio nunca pare.
+                        </p>
+                        <div class="cta-buttons">
+                            <a href="#" class="btn btn-primary btn-lg me-3">Cadastre seu restaurante</a>
+                            <a href="#" class="btn btn-outline-primary btn-lg">Já tem um perfil? Clique aqui</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <h4 class="mb-4">Sobre nós</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#" class="text-light text-decoration-none">
+                                <i class="fas fa-users me-2"></i>
+                                Programa de parceiros
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-light text-decoration-none">
+                                <i class="fas fa-store me-2"></i>
+                                Portal de parceiros
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-light text-decoration-none">
+                                <i class="fas fa-cogs me-2"></i>
+                                Serviços de plataforma
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <h4 class="mb-4">Contato</h4>
+                    <p class="mb-2">
+                        <i class="fas fa-phone me-2"></i>
+                        4020-2499
+                    </p>
+                    <p class="mb-4">
+                        <i class="fas fa-envelope me-2"></i>
+                        contato@bmshop.com.br
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="btn btn-outline-light me-2" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light me-2" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-2">Copyright © 2025 BM SHOP BRASIL LTDA.</p>
+                <p class="mb-2">CNPJ: 60.112.920/0001-23</p>
+                <p class="mb-4">Avenida Paulista, nº 2537, 12º Andar, Bela Vista, SP, CEP 01311-300</p>
+                <div>
+                    <a href="#" class="text-light text-decoration-none me-3">Política de Privacidade</a>
+                    <a href="#" class="text-light text-decoration-none">Termos de Serviço</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html> 

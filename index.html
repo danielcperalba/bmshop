@@ -18,7 +18,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top bg-white navbar-light py-2">
+        <nav class="navbar navbar-expand-lg fixed-top bg-white navbar-light py-1">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="logo.png" alt="BM Shop Logo" width="120" height="40">
@@ -39,12 +39,12 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#pagamento">
+                            <a class="nav-link" href="pagamento.html">
                                 <span>Pagamento</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#pedidos">
+                            <a class="nav-link" href="pedidos.html">
                                 <span>Pedidos</span>
                             </a>
                         </li>
@@ -60,14 +60,7 @@
                         </li>
                     </ul>
                     <div class="d-flex align-items-center gap-3">
-                        <button class="btn btn-link theme-toggle p-0" aria-label="Alternar tema">
-                            <i class="fas fa-moon"></i>
-                        </button>
                         <div class="dropdown">
-                            <button class="btn btn-link dropdown-toggle text-dark p-0" type="button" data-bs-toggle="dropdown">
-                                <i class="fas fa-globe"></i>
-                                <span>Brasil (PT)</span>
-                            </button>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Brasil (PT)</a></li>
                                 <li><a class="dropdown-item" href="#">English (US)</a></li>
@@ -81,14 +74,14 @@
     </header>
 
     <main>
-        <section class="hero py-5">
+        <section class="py-1">
             <div class="container">
                 <div class="row align-items-center min-vh-100">
                     <div class="col-lg-6">
                         <div class="hero-text">
                             <h1 class="display-3 fw-bold mb-4">
-                                <span class="highlight display-1">0%</span>
-                                <span>de Comissão e</span>
+                                <span class="highlight display-1 font-size-10">R$ 0,00</span>
+                                <span>de Adesão e</span>
                                 <span>0 Mensalidade</span>
                             </h1>
                             <p class="lead mb-4">Assine o contrato antes de 30 de junho de 2025 e aproveite 24 meses com 0% de comissão e sem mensalidade!</p>
@@ -112,22 +105,22 @@
                         <div class="card shadow-lg border-0">
                             <div class="card-body p-4">
                                 <div class="text-center mb-4">
-                                    <h2 class="h3">Cadastre seu estabelecimento</h2>
+                                    <h3>Cadastre seu estabelecimento</h3>
                                 </div>
                                 <form id="registerForm">
                                     <div class="mb-3">
                                         <div class="input-group">
                                             <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-                                            <input type="email" class="form-control" id="email" placeholder="E-mail" required>
+                                            <input type="email" class="form-control" id="email" placeholder="contato@minhaloja.com.br" required>
                                         </div>
                                     </div>
                                     <div class="mb-3">
                                         <div class="input-group">
                                             <span class="input-group-text"><i class="fas fa-phone"></i></span>
-                                            <input type="tel" class="form-control" id="phone" placeholder="Telefone" required>
+                                            <input type="tel" class="form-control" id="phone" placeholder="(00) 00000-0000" required>
                                         </div>
                                     </div>
-                                    <button type="submit" class="btn btn-primary w-100 py-3">
+                                    <button type="submit" class="btn btn-primary w-100 py-2">
                                         <span>Cadastrar agora</span>
                                         <i class="fas fa-arrow-right ms-2"></i>
                                     </button>
@@ -151,25 +144,19 @@
                 <div class="row g-4">
                     <div class="col-md-6">
                         <div class="card border-0 shadow-sm h-100">
-                            <div class="card-body text-center p-4">
-                                <div class="stat-icon mb-3">
-                                    <i class="fas fa-users fa-2x"></i>
-                                </div>
+                            <div class="card-body text-start p-4">
                                 <h3 class="h5 mb-2">Mais de</h3>
-                                <div class="stat-number display-4 fw-bold text-primary">54,990,000</div>
-                                <p class="text-muted">de brasileiros já usam o app</p>
+                                <div class="stat-number display-4 fw-bold text-primary">180.000</div>
+                                <p class="text-muted">de moradores em Barra Mansa</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="card border-0 shadow-sm h-100">
-                            <div class="card-body text-center p-4">
-                                <div class="stat-icon mb-3">
-                                    <i class="fas fa-route fa-2x"></i>
-                                </div>
+                            <div class="card-body text-start p-4">
                                 <h3 class="h5 mb-2">Mais de</h3>
-                                <div class="stat-number display-4 fw-bold text-primary">1,399,900,000</div>
-                                <p class="text-muted">de corridas realizadas em 2024</p>
+                                <div class="stat-number display-4 fw-bold text-primary">60%</div>
+                                <p class="text-muted">do emprego e renda vem do comércio local</p>
                             </div>
                         </div>
                     </div>
@@ -181,29 +168,26 @@
             <h2>BM Shop é uma nova opção para:</h2>
             <div class="benefits-grid">
                 <div class="benefit-card">
-                    <h3>Maximizar sua receita</h3>
+                    <h5>Maximizar sua receita</h3>
                     <p>Uma política de taxas justa e transparente permite que você receba mais pedidos com mais facilidade e expanda seu potencial de lucro.</p>
                 </div>
                 <div class="benefit-card">
-                    <h3>Gerar mais visibilidade</h3>
+                    <h5>Gerar mais visibilidade</h3>
                     <p>Aproveite a ampla base de usuários ativos para obter maior visibilidade para seu estabelecimento e aumentar rapidamente o volume de pedidos.</p>
                 </div>
                 <div class="benefit-card">
-                    <h3>Diversificar sua renda</h3>
+                    <h5>Diversificar sua renda</h3>
                     <p>Incentive os gastos dos usuários e expanda seus canais de lucro utilizando ferramentas como oferta de desconto, combo e compre X, leve Y</p>
-                </div>
-                <div class="benefit-card">
-                    <h3>Pagamentos semanais</h3>
-                    <p>Aproveite pagamentos semanais estáveis sem taxas de pagamento antecipado, garantindo a segurança e o retorno eficiente do seu saldo.</p>
                 </div>
             </div>
         </section>
 
-        <section class="plans bg-light">
-            <h2 class="text-center display-5 mb-5 text-dark">Plano de cooperação</h2>
+        <section class="plans">
+            <h2 class="text-center ">Plano de cooperação</h2>
             <div class="plans-container">
-                <div class="plan-card delivery">
-                    <div class="plan-header">
+                
+                <div class="plan-card bg-white">
+                    <div class="plan-header bg-white">
                         <i class="fas fa-motorcycle"></i>
                         <h3>Entrega feita pela BM Shop</h3>
                     </div>
@@ -220,15 +204,11 @@
                             <span class="feature-value">%</span>
                             <span class="feature-label">Cobrança de operadora de cartão para pagamentos feitos via BM Shop</span>
                         </div>
-                        <div class="plan-feature">
-                            <span class="feature-value">Taxa de entrega BM Shop</span>
-                            <span class="feature-label">Acesse nosso portal de parceiros mais tarde para ver como a Taxa de entrega é cobrada.</span>
-                        </div>
-                        <button class="plan-button">Saiba mais</button>
                     </div>
                 </div>
-                <div class="plan-card basic">
-                    <div class="plan-header">
+                
+                <div class="plan-card bg-white">
+                    <div class="plan-header bg-white">
                         <i class="fas fa-store"></i>
                         <h3>Entrega feita pela loja</h3>
                     </div>
@@ -245,30 +225,29 @@
                             <span class="feature-value">%</span>
                             <span class="feature-label">Cobrança de operadora de cartão para pagamentos feitos via BM Shop</span>
                         </div>
-                        <button class="plan-button">Saiba mais</button>
                     </div>
                 </div>
             </div>
             <div class="plans-footer">
-                <p>Quer saber quanto você pode ganhar por pedido com diferentes planos de cooperação? <a href="#">Clique aqui para descobrir!</a></p>
+                <p class="text-light">Quer saber quanto você pode ganhar por pedido com diferentes planos de cooperação? <a href="#">Clique aqui para descobrir!</a></p>
             </div>
         </section>
 
         <section class="steps">
-            <h2>Como abrir uma loja na BM Shop?</h2>
+            <h2 class="text-center mb-5">Como abrir uma loja na BM Shop?</h2>
             <div class="steps-container">
                 <div class="step-card">
-                    <div class="step-number">01</div>
+                    <div class="step-number mb-3">01</div>
                     <h3>Crie seu perfil e cadastre sua loja com um CNPJ</h3>
                     <p>Você vai precisar informar seu nome completo, e-mail e número de celular. Para o cadastro da loja, tenha em mãos o CNPJ, além do CPF e RG do responsável legal.</p>
                 </div>
                 <div class="step-card">
-                    <div class="step-number">02</div>
+                    <div class="step-number mb-3">02</div>
                     <h3>Escolha um plano e finalize a assinatura</h3>
                     <p>Selecione um dos planos disponíveis. Suas informações serão verificadas, e em poucos minutos você receberá o contrato para assinar eletronicamente.</p>
                 </div>
                 <div class="step-card">
-                    <div class="step-number">03</div>
+                    <div class="step-number mb-3">03</div>
                     <h3>Configure sua loja e comece a vender!</h3>
                     <p>Cadastre seus dados bancários, monte seu cardápio e ajuste os detalhes. Depois disso, sua loja estará pronta para ser ativada e começar a receber pedidos.</p>
                 </div>
@@ -276,7 +255,7 @@
         </section>
 
         <section class="faq">
-            <h2>Perguntas frequentes</h2>
+            <h2 class="text-center mb-5">Perguntas frequentes</h2>
             <div class="faq-container">
                 <div class="faq-item">
                     <h3>Quais informações obrigatórias são necessárias para cadastrar um estabelecimento?</h3>

@@ -12,6 +12,8 @@
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --bmshop-blue:#089BF0;
+    --bmshop-gray: #1E1E1E;
 }
 
 * {
@@ -425,7 +427,7 @@ header {
 
 .benefit-card {
     background-color: var(--white);
-    padding: 2rem;
+    padding: 1rem;
     border-radius: var(--border-radius);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
@@ -439,11 +441,11 @@ header {
 /* Plans Section */
 .plans {
     padding: 4rem 2rem;
-    background-color: var(--light-gray);
+    background-color: var(--bmshop-blue);
 }
 
 .plans-container {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 2rem auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -465,10 +467,10 @@ header {
 }
 
 .plan-header {
-    background-color: var(--primary-color);
+    background-color: var(--bmshop-blue);
     color: var(--white);
-    padding: 2rem 1.5rem;
-    text-align: center;
+    padding: 1rem 1rem;
+    text-align: start;
     position: relative;
 }
 
@@ -483,12 +485,12 @@ header {
 }
 
 .plan-details {
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .plan-feature {
     text-align: left;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--light-gray);
 }
@@ -498,11 +500,10 @@ header {
 }
 
 .feature-value {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: var(--primary-color);
     display: block;
-    margin-bottom: 0.5rem;
 }
 
 .feature-label {
@@ -513,7 +514,7 @@ header {
 
 .plan-button {
     width: 100%;
-    padding: 1rem;
+    padding: 0.5rem;
     background-color: var(--primary-color);
     color: var(--white);
     border: none;
@@ -555,11 +556,11 @@ header {
 
 /* Specific plan styles */
 .plan-card.delivery .plan-header {
-    background-color: var(--primary-color);
+    background-color: var(--bs-body-color);
 }
 
 .plan-card.basic .plan-header {
-    background-color: #2d3436;
+    background-color: var(--bs-body-color);
 }
 
 /* Steps Section */
@@ -589,8 +590,8 @@ header {
     left: -1rem;
     background-color: var(--primary-color);
     color: var(--white);
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -768,12 +769,12 @@ footer {
     }
 
     .nav-link:hover {
-        background-color: #374151;
+        background-color: #dddddd;
     }
 
     .theme-toggle:hover,
     .language-select:hover {
-        background-color: #374151;
+        background-color: #f3f3f3;
     }
 
     .registration-form {
