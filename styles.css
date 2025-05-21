@@ -40,6 +40,10 @@ header {
     z-index: 1000;
 }
 
+.main1 {
+    background-color: var(--bmshop-gray);
+}
+
 .main-nav {
     max-width: 1200px;
     margin: 0 auto;
@@ -349,7 +353,7 @@ header {
 /* Stats Section */
 .stats {
     padding: 6rem 2rem;
-    background-color: var(--white);
+    background-color: var(--bmshop-gray);
 }
 
 .stats h2 {
