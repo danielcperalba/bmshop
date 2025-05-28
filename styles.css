@@ -448,6 +448,10 @@ header {
     background-color: var(--bmshop-blue);
 }
 
+.section1{
+    background-image: var(--bmshop-blue);
+}
+
 .plans-container {
     max-width: 800px;
     margin: 2rem auto;
@@ -486,6 +490,10 @@ header {
 .plan-header h3 {
     font-size: 1.5rem;
     font-weight: 600;
+}
+
+.plans-setup{
+    background-color: var(--bmshop-blue);
 }
 
 .plan-details {
