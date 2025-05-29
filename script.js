@@ -225,4 +225,84 @@ document.addEventListener('DOMContentLoaded', () => {
             item.classList.toggle('active');
         });
     });
-}); 
+});
+
+// Form validation and submission
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('storeRegistrationForm');
+    
+    // Form validation
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        if (!form.checkValidity()) {
+            event.stopPropagation();
+            form.classList.add('was-validated');
+            return;
+        }
+
+        // Get form data
+        const formData = {
+            phone: document.getElementById('phone').value,
+            email: document.getElementById('email').value,
+            timestamp: new Date().toISOString()
+        };
+
+        // Submit to Google Sheets
+        submitToGoogleSheets(formData);
+    });
+});
+
+// Function to submit data to Google Sheets
+async function submitToGoogleSheets(formData) {
+    try {
+        const submitButton = document.querySelector('#storeRegistrationForm button[type="submit"]');
+        const originalButtonText = submitButton.innerHTML;
+        submitButton.disabled = true;
+        submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+
+        const response = await fetch('https://script.google.com/macros/s/AKfycbwAQwxx1VuBuEF1S-NE0Utkbd_-jrQvcGljHHQ23GCieuLM9oymcKIUWHYTp22Exfk/exec', {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData)
+        });
+
+        // Since we're using no-cors mode, we can't check the response status
+        // We'll assume success if no error is thrown
+        showAlert('success', 'Cadastro realizado com sucesso! Entraremos em contato em breve.');
+        
+        // Reset form
+        document.getElementById('storeRegistrationForm').reset();
+        document.getElementById('storeRegistrationForm').classList.remove('was-validated');
+    } catch (error) {
+        console.error('Error:', error);
+        showAlert('danger', 'Ocorreu um erro ao enviar o formulário. Por favor, tente novamente.');
+    } finally {
+        // Reset button state
+        const submitButton = document.querySelector('#storeRegistrationForm button[type="submit"]');
+        submitButton.disabled = false;
+        submitButton.innerHTML = 'Cadastrar';
+    }
+}
+
+// Function to show alert messages
+function showAlert(type, message) {
+    const alertDiv = document.createElement('div');
+    alertDiv.className = `alert alert-${type} alert-dismissible fade show`;
+    alertDiv.role = 'alert';
+    alertDiv.innerHTML = `
+        ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    `;
+    
+    const form = document.getElementById('storeRegistrationForm');
+    form.parentNode.insertBefore(alertDiv, form);
+    
+    // Auto dismiss after 5 seconds
+    setTimeout(() => {
+        alertDiv.remove();
+    }, 5000);
+} 
